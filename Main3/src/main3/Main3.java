@@ -1,11 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package main3;
 
-import core.RockRollRadio.RockRollRadio;
-import core.Emision.Emision;
+import core.radio.RockRollRadio;
+import core.radio.program.Emision;
+import core.person.Locutor;
 public class Main3 {
     
     public static void main(String[] args) {
