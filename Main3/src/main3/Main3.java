@@ -5,13 +5,13 @@
 package main3;
 
 import core.RockRollRadio.RockRollRadio;
-
+import core.Emision.Emision;
 public class Main3 {
     
     public static void main(String[] args) {
         RockRollRadio radio = new RockRollRadio();
 
-        radio.addLocutor(new Locutor("Pedro Rock"));
+        radio.addLocutor(new Locutor( "Pedro Rock"));
         radio.addLocutor(new Locutor("Pablo Clasico"));
         radio.addLocutor(new Locutor("Simona Tropical"));
         radio.addLocutor(new Locutor("Carolina Marel"));
