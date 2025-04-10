@@ -8,16 +8,10 @@ package core.person;
  *
  * @author glopr
  */
-public class Persona {
-    protected String nombre;
+public class Artista extends Persona{
     
-    public Persona(String nombre) {
-        this.nombre = nombre;
+    public Artista(String nombre) {
+        super(nombre);
     }
     
-    public String getNombre(){
-        return nombre;
-    }
-    
-        
 }

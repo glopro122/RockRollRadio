@@ -4,10 +4,50 @@
  */
 package core.radio.program;
 
-/**
- *
- * @author glopr
- */
+import java.util.ArrayList;
+import core.person.Invitado;
+import core.person.Artista;
 public class Emision {
+    private static int ID = 0;
+
+    private int serial;
+    private ArrayList<Cancion> canciones;
+    private ArrayList<Invitado> invitados;
+    private Programa programa; 
+
+    public Emision(Programa programa) {
+        this.serial = Emision.ID;
+        this.canciones = new ArrayList<>();
+        this.invitados = new ArrayList<>();
+        this.programa = programa;
+        
+        this.programa.addEmision(this);
+        
+        Emision.ID++;
+    }
     
+    public boolean  addInvitado(Invitado invitado) {
+        if (!this.invitados.contains(invitado)) {
+            this.invitados.add(invitado);
+            return true;
+        }
+        return false;
+    }    
+    
+    public boolean addCancion(Cancion cancion){
+        if(!this.canciones.contains(cancion)){
+            this.canciones.add(cancion);
+            return true;
+        }
+        return false;
+    }
+    public int getCantidadCanciones(Artista artista) {
+        int numCanciones = 0;
+        for(Cancion cancion : this.canciones){
+            if (cancion.getArtista().equals(artista)){
+                numCanciones++;
+            }
+        }
+        return numCanciones;
+    }
 }

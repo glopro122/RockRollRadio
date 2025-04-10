@@ -1,8 +1,13 @@
 package main3;
 
+import core.person.Artista;
+import core.person.Invitado;
 import core.radio.RockRollRadio;
 import core.radio.program.Emision;
 import core.person.Locutor;
+import core.radio.program.Cancion;
+import core.radio.program.Programa;
+import core.radio.utils.Genero;
 public class Main3 {
     
     public static void main(String[] args) {

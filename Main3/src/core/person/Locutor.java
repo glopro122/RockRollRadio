@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class Locutor extends Persona{
 
-    private ArrayList<Programa> programas;
+    private final ArrayList<Programa> programas;
     
     public Locutor(String nombre){
         super(nombre);
@@ -21,6 +21,7 @@ public class Locutor extends Persona{
             this.programas.add(programa);
             return true;
         }
+        return false;
     }
     
     
